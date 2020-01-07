@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgA-NM-zzz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NaX-3W-Ud4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1712.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-ea-HQ2">
+                                                <rect key="frame" x="10" y="10" width="394" height="162.5"/>
+                                                <string key="text">You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RtZ-CO-rXE">
+                                                <rect key="frame" x="10" y="182.5" width="394" height="597"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RtZ-CO-rXE" secondAttribute="height" multiplier="462:700" id="DhC-mX-dPc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIk-lK-1eW">
+                                                <rect key="frame" x="10" y="789.5" width="394" height="913"/>
+                                                <mutableString key="text">You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.You should see the view controller elongated to 1100 pt height now. Now you can start placing labels, images etc inside the content view (the view inside scrollview). After placing, be sure to create constraints from the top element to the bottom. You can increase the height of view controller in simulated size and height constraint of the content view as you need.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Qqg-ea-HQ2" secondAttribute="trailing" constant="10" id="Aby-tK-aNg"/>
+                                            <constraint firstItem="Qqg-ea-HQ2" firstAttribute="top" secondItem="NaX-3W-Ud4" secondAttribute="top" constant="10" id="LL1-YQ-42Z"/>
+                                            <constraint firstItem="RtZ-CO-rXE" firstAttribute="top" secondItem="Qqg-ea-HQ2" secondAttribute="bottom" constant="10" id="dx8-OU-qry"/>
+                                            <constraint firstAttribute="bottom" secondItem="PIk-lK-1eW" secondAttribute="bottom" constant="10" id="gdb-Nb-kpV"/>
+                                            <constraint firstItem="PIk-lK-1eW" firstAttribute="leading" secondItem="NaX-3W-Ud4" secondAttribute="leading" constant="10" id="ijs-5B-Hci"/>
+                                            <constraint firstItem="PIk-lK-1eW" firstAttribute="top" secondItem="RtZ-CO-rXE" secondAttribute="bottom" constant="10" id="pz5-Fy-g23"/>
+                                            <constraint firstItem="RtZ-CO-rXE" firstAttribute="centerX" secondItem="NaX-3W-Ud4" secondAttribute="centerX" id="qqt-9j-y0J"/>
+                                            <constraint firstItem="RtZ-CO-rXE" firstAttribute="leading" secondItem="NaX-3W-Ud4" secondAttribute="leading" constant="10" id="qyI-L5-gcb"/>
+                                            <constraint firstAttribute="trailing" secondItem="PIk-lK-1eW" secondAttribute="trailing" constant="10" id="up7-1d-lvb"/>
+                                            <constraint firstItem="Qqg-ea-HQ2" firstAttribute="leading" secondItem="NaX-3W-Ud4" secondAttribute="leading" constant="10" id="w37-eY-bAD"/>
+                                            <constraint firstAttribute="trailing" secondItem="RtZ-CO-rXE" secondAttribute="trailing" constant="10" id="xd6-ZD-nrc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NaX-3W-Ud4" firstAttribute="top" secondItem="ePv-ux-ulg" secondAttribute="top" id="Rgh-Kf-T4D"/>
+                                    <constraint firstItem="NaX-3W-Ud4" firstAttribute="bottom" secondItem="ePv-ux-ulg" secondAttribute="bottom" id="UpP-2t-tsa"/>
+                                    <constraint firstItem="NaX-3W-Ud4" firstAttribute="trailing" secondItem="ePv-ux-ulg" secondAttribute="trailing" id="fNC-pn-WKX"/>
+                                    <constraint firstItem="xXp-ro-fGd" firstAttribute="width" secondItem="NaX-3W-Ud4" secondAttribute="width" id="iMH-h0-ZEo"/>
+                                    <constraint firstItem="NaX-3W-Ud4" firstAttribute="leading" secondItem="ePv-ux-ulg" secondAttribute="leading" id="zeU-Y8-Wrq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ePv-ux-ulg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="xXp-ro-fGd"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GgA-NM-zzz" secondAttribute="trailing" id="1nu-3c-uJ6"/>
+                            <constraint firstItem="GgA-NM-zzz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7V1-nu-9Fc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GgA-NM-zzz" secondAttribute="bottom" id="lfk-EX-mOd"/>
+                            <constraint firstItem="GgA-NM-zzz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vZP-Py-oUd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
